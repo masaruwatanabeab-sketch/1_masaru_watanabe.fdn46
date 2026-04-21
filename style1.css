@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* 1. ページ全体の背景と文字の配置 */
+body {
+  /* TWICEカラーをイメージしたおしゃれなグラデーション */
+  background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%);
+  background-attachment: fixed; /* スクロールしても背景を固定 */
+
+  text-align: center; /* 文字を中央揃えにする */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333; /* 文字色 */
+  margin: 0;
+  padding: 20px;
+}
+
+/* 画像を囲う箱の設定 */
+.image-container {
+  display: flex; /* 横並びにする */
+  justify-content: space-between; /* 均等に間隔を空ける */
+  gap: 10px; /* 画像同士のすき間 */
+  width: 100%; /* 画面いっぱいに広げる */
+}
+
+/* 中にある画像の設定 */
+.image-container img {
+  width: 50vw; /* 3枚が収まるように横幅を調整 */
+  height: 50vh; /* 高さを揃える（お好みで調整してください） */
+  object-fit: cover; /* 画像を歪ませずに指定したサイズに収める */
+  border-radius: 15px; /* 角を少し丸くするとおしゃれになります */
+}
