@@ -98,7 +98,7 @@ nav {
 }
 
 .nav-links ul a:hover {
-  color: white;
+  color: black;
 }
 
 .infomation {
@@ -164,8 +164,7 @@ nav {
 }
 
 .mobile {
-  width: 600px;
-  height:600px;
+  width: 400px;
   position: absolute;
   z-index: 1;
   top: 50%;
