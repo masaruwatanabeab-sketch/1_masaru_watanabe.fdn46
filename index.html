@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>まさるの部屋</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- メインコンテンツ -->
+    <div class="main">
+      <nav>
+        <div class="logo-area">
+          <img src="./images/DIGのアイコン.png" class="logo" />
+          <h2 id="logo-text">自己紹介ページ</h2>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <a href="#" id="homeBtn0" ;><li>ホーム</li></a>
+            <a href="#" id="homeBtn1"><li>自己紹介</li></a>
+            <a href="#" id="homeBtn2"><li>ロケーション</li></a>
+            <a href="#" id="homeBtn3"><li>業務内容</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ポップアップ　自己紹介 -->
+      <div id="homemodal1" class="modal-overlay">
+        <div class="modal-content">
+          <h2>名前：渡邉 勝(わたなべ まさる)</h2>
+          <p>出身：静岡県富士市出身</p>
+          <p>生年月日：1996年1月29日(30歳)</p>
+          <p>入社：2014年4月</p>
+          <button id="closeBtn1">閉じる</button>
+        </div>
+      </div>
+
+      <!-- ポップアップ　ロケーション -->
+      <div id="homemodal2" class="modal-overlay">
+        <div class="modal-content">
+          <h2>ロケーション：東富士研究所</h2>
+          <p>部署：東富士研究所管理部 試作課 部品加工係</p>
+          <p>
+            説明：モビリティの将来に向けた<br />
+            研究・開発・実証を行なう拠点
+          </p>
+          <button id="closeBtn2">閉じる</button>
+        </div>
+      </div>
+
+      <!-- ポップアップ　業務内容 -->
+      <div id="homemodal3" class="modal-overlay">
+        <div class="modal-content">
+          <h2>業務内容：研究開発部品の試作</h2>
+          <p>旋盤やフライス盤、マシニングセンターの機械を使用</p>
+          <p>鉄材やアルミ材等材質多種で、一品モノの製品製作を実施</p>
+          <button id="closeBtn3">閉じる</button>
+        </div>
+      </div>
+
+      <!-- 情報表示エリア -->
+      <div class="infomation">
+        <div class="overlay"></div>
+        <img src="./images/自分の写真.jpg" class="mobile" />
+        <div id="circle">
+          <div class="feature one">
+            <img src="./images/camera.png" alt="" />
+            <div>
+              <h1>TWICE</h1>
+              <a href="./twice.html" target="_blank"><li>詳細はこちら</li></a>
+            </div>
+          </div>
+          <div class="feature two">
+            <img src="./images/processor.png" alt="" />
+            <div>
+              <h1>ダイビング</h1>
+              <a href="./diving.html" target="_blank"><li>詳細はこちら</li></a>
+            </div>
+          </div>
+          <div class="feature three">
+            <img src="./images/display.png" alt="" />
+            <div>
+              <h1>スニーカー</h1>
+              <a href="./snekers.html" target="_blank"
+                ><li>詳細はこちら</li></a
+              >
+            </div>
+          </div>
+          <div class="feature four">
+            <img src="./images/battery.png" alt="" />
+            <div>
+              <h1>ラーメン</h1>
+              <a href="./ramen.html" target="_blank"><li>詳細はこちら</li></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="control">
+        <img src="./images/矢印イラスト.png" id="upBtn" />
+        <h3>趣味・特技</h3>
+        <img src="./images/矢印イラスト.png" id="downBtn" />
+      </div>
+
+      <!-- HPを開いた時のポップアップ -->
+      <div id="modal0" class="modal-overlay">
+        <div class="modal-content">
+          <h2>こんにちは</h2>
+          <p>MASARUの部屋へようこそ!<br />成果報告をさせてください</p>
+          <button id="closeBtn0">閉じる</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="background">
+      <p>DIG基礎コース 最終報告用作品</p>
+      <p>Copyright © 2024 MASARUの部屋 All Rights Reserved.</p>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
