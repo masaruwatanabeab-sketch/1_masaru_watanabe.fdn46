@@ -32,7 +32,7 @@ a {
 
 /* （おまけ）マウスを乗せた時だけ薄く光らせる */
 a:hover {
-  color: black;
+  color: white;
   opacity: 0.2s; /* 少し透明にして「押せる感」を出す */
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 
 .nav-links ul a:hover {
-  color: black;
+  color:black;
 }
 
 .infomation {
